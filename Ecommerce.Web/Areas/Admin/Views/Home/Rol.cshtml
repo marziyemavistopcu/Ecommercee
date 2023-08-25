@@ -1,0 +1,38 @@
+﻿@{
+
+}
+
+<div id="divRoles">
+
+</div>
+
+
+<h2>Roller</h2>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" onClick="NewRole()">
+    Yeni Rol Ekle
+</button>
+
+
+<div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Rol Bilgileri</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <label for="inputRoleName" class="form-label">Rol Adı: </label>
+                <input type="text" id="inputRoleName" class="form-control">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary" onclick="SaveRoles()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/admin/roles.js" asp-append-version="true"></script>

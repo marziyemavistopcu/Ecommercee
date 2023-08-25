@@ -1,0 +1,49 @@
+﻿<div id="divProducts">
+
+</div>
+
+<h2>Ürünler</h2>
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" onClick="NewProduct()">
+    Yeni Ürün Ekle
+</button>
+
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <label for="inputProductTitle" class="form-label">Ürün Adı: </label>
+                <input type="text" id="inputProductTitle" class="form-control">
+
+                <label for="inputProductDescription" class="form-label">Ürün Açıklama: </label>
+                <input type="text" id="inputProductDescription" class="form-control">
+
+                <label for="inputProductPrice" class="form-label">Ürün Fiyat: </label>
+                <input type="text" id="inputProductPrice" class="form-control">
+
+                <label for="inputProductQuantity" class="form-label">Ürün Adet: </label>
+                <input type="text" id="inputProductQuantity" class="form-control">
+
+                <label for="inputProductCategoryId" class="form-label">Ürün Kategory id </label>
+                <input type="text" id="inputProductCategoryId" class="form-control">
+
+                <label for="inputProductImg" class="form-label">Ürün Resim </label>
+                <input type="text" id="inputProductImg" class="form-control">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary" onclick="SaveProduct()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/js/admin/product.js" asp-append-version="true"></script>
